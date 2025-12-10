@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./svg/favicon.svg" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -11,8 +12,42 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+    <header class="header accent">
+      <h1 class="header__tag">&lt/HTML&gt</h1>
+      <span class="header__caption">закрывающий тег</span>
+    </header>
+    <main>
+      <ul class="cards">
+        <li>
+          <article class="card">
+            <h2 class="card__title">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h2>
+            <picture class="card__img-wrapper">
+              <img
+                class="card__img"
+                src="/images/truck.png"
+                alt="картинка с грузовиком"
+              />
+              <span class="watermark accent" aria-hidden="true">&lt/HTML&gt</span>
+            </picture>
+            <div class="card__content">
+              <p>
+                Это было самое начало пути. На этом этапе важно было
+                проникнуться основами и настроиться на учёбу. И, возможно,
+                подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p>Место для ваших воспоминаний о начале обучения.</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <h2 class="card__title">1 спринт: Я — чистый лист</h2>
+          </article>
+        </li>
+      </ul>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

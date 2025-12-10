@@ -1,1 +1,23 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --page-bg: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+  --accent-font-family: "PressStart2P-Regular";
+  --accent-border: 2px solid #000;
+  
+  --header__inline-size: clamp(375px, 100dvi, 700px);
+  --header__block-size: clamp(327px, 279.6923px + 12.6154cqi, 368px);
+  --header__tag-font-size: clamp(49px, 30.5385px + 4.9231cqi, 65px);
+  --header__caption-font-size: clamp(14px, 3.6154px + 2.7692cqi, 23px);
+
+  --main__card__inline-size: clamp(375px, 100dvi, 700px);
+  --card__font-size: 18px;
+  --watermark-font-size: 14px;
+  --watermark-stroke-width: 1px;
+  --watermark-stroke-color: #fff;
+}
