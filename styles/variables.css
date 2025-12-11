@@ -9,7 +9,7 @@
     linear-gradient(to bottom, #e7e7e7, #1a1a1a);
   --accent-font-family: "PressStart2P-Regular";
   --accent-border: 2px solid #000;
-  
+
   --header__inline-size: clamp(375px, 100dvi, 700px);
   --header__block-size: clamp(327px, 279.6923px + 12.6154cqi, 368px);
   --header__tag-font-size: clamp(49px, 30.5385px + 4.9231cqi, 65px);
@@ -20,4 +20,13 @@
   --watermark-font-size: 14px;
   --watermark-stroke-width: 1px;
   --watermark-stroke-color: #fff;
+
+  --save-button__width: clamp(310px, 276.5385px + 8.9231vw, 339px);
+  --save-button_size: 28px;
+}
+
+@media (width >= 700px) {
+  :root {
+    --save-button_size: 21px;
+  }
 }
