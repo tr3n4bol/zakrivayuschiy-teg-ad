@@ -7,7 +7,9 @@
     ),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #e7e7e7, #1a1a1a);
-  --accent-font-family: "PressStart2P-Regular";
+  --main-font-family: "Inter-Variable", sans-serif; 
+  --accent-font-family: "PressStart2P-Regular", sans-serif;
+  --main-font-size: 14px;
   --accent-border: 2px solid #000;
 
   --header__inline-size: clamp(375px, 100dvi, 700px);
@@ -23,10 +25,17 @@
 
   --save-button__width: clamp(310px, 276.5385px + 8.9231vw, 339px);
   --save-button_size: 28px;
+
+  --dialog-height: 192px;
+  --dialog-min-width: 341px;
+  --dialog-max-width: 353px;
+  --dialog-padding: 30px 40px;
+
 }
 
 @media (width >= 700px) {
   :root {
     --save-button_size: 21px;
+    --dialog-padding: 30px;
   }
 }
