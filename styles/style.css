@@ -157,19 +157,6 @@
   border-color: transparent;
 }
 
-.card__icon-button:focus {
-  outline: none;
-}
-
-.card__icon-button:focus-visible {
-  border-color: var(--accent-color);
-  transition: border-color 0.3s ease;
-}
-
-.button-wrapper:hover .base_button::after {
-  transform: translateX(0);
-}
-
 .button__text {
   position: relative;
   z-index: 1;
@@ -254,7 +241,7 @@
   align-items: center;
   justify-content: center;
   grid-template-columns: 1fr minmax(198px, 234px);
-  grid-template-rows: 63px 40px; 
+  grid-template-rows: 63px 40px;
   /* grid-template-rows: 63px 38px; до подгона размеров иконки лайка */
   column-gap: 20px;
   row-gap: 30px;

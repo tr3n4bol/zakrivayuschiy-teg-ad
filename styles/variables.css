@@ -32,6 +32,9 @@
   --dialog-max-width: 353px;
   --dialog-padding: 30px 40px;
 
+  --contour-color: #000;
+  --animation-fill-color: red;
+
 }
 
 @media (width >= 700px) {
