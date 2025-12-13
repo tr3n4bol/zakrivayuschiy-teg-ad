@@ -7,7 +7,8 @@
     ),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #e7e7e7, #1a1a1a);
-  --main-font-family: "Inter-Variable", sans-serif; 
+
+  --main-font-family: "Inter-Variable", sans-serif;
   --accent-font-family: "PressStart2P-Regular", sans-serif;
   --main-font-size: 14px;
   --accent-color: #000;
@@ -34,7 +35,6 @@
 
   --contour-color: #000;
   --animation-fill-color: red;
-
 }
 
 @media (width >= 700px) {
