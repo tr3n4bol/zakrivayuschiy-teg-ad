@@ -68,6 +68,7 @@
 .card__title {
   font-size: inherit;
   padding: 4px 10px 5px;
+  font-variation-settings: 'wght' 785;
   border-block-end: var(--accent-border);
 }
 
