@@ -56,12 +56,12 @@
   transition: fill 0.3s 0.05s;
 }
 
-.like-icon.is-liked .core {
+svg.like-icon.is-liked .core {
   fill: var(--animation-fill-color);
   transition: fill 0.3s;
 }
 
-.like-icon.is-liked .main-body {
+svg.like-icon.is-liked .main-body {
   fill: var(--animation-fill-color);
   transition: fill 0.3s 0.05s;
 }

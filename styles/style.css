@@ -12,6 +12,7 @@
 
 .page {
   font-family: var(--main-font-family);
+  font-variation-settings: 'wght' 400;
   display: flex;
   flex-direction: column;
   align-items: center;
