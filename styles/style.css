@@ -117,30 +117,65 @@
   margin-block-end: 27px;
 }
 
-.card__buttons-wrapper {
+.button-wrapper {
   display: flex;
+  justify-self: flex-end;
   justify-content: flex-end;
   align-items: flex-start;
+}
+
+.card .button-wrapper {
+  margin-block-end: 25px;
+  margin-inline-end: 25px;
 }
 
 .card__icon-button {
 }
 
-.rect_button {
+.base_button {
+  position: relative;
+  overflow: hidden;
   font-family: var(--accent-font-family);
   font-size: 14px;
   line-height: 90%;
   background-color: #fff;
+  color: #fff;
   border: var(--accent-border);
+}
+
+.base_button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--accent-color);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.button-wrapper:hover .base_button::after {
+  transform: translateX(0)
+}
+
+.button__text {
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: difference;
+}
+
+.base_button:focus-visible {
+  outline: none;
+  box-shadow: 2px 2px 0 var(--accent-color);
+  transition: box-shadow 0.3s ease;
 }
 
 .card__like-button {
   display: inline-block;
   inline-size: 130px;
   block-size: 38px;
-  margin-block-end: 25px;
-  margin-inline-end: 25px;
 }
+
+
 
 .img__0sprint {
 }
@@ -173,15 +208,17 @@
   filter: hue-rotate(90deg) contrast(0.5) blur(1px);
 }
 
+#save_button {
+  align-self: center;
+  justify-self: center;
+}
+
 .save_button {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  justify-self: center;
   inline-size: var(--save-button__width);
-  background-color: #fff;
-  border: var(--accent-border);
   margin-block-start: 50px;
   gap: 8px;
   padding: 15px 20px;
@@ -195,6 +232,10 @@
 .save-icon {
   block-size: var(--save-button_size);
   aspect-ratio: 1/1;
+  position: relative;
+  z-index: 1;
+  filter: invert(1);
+  mix-blend-mode: difference;
 }
 
 #floppy_dialog[open] {
@@ -225,7 +266,7 @@
 
 #floppy_dialog form {
   grid-column: span 2;
-  text-transform: uppercase;  
+  text-transform: uppercase;
   inline-size: 100%;
   block-size: 100%;
 }
