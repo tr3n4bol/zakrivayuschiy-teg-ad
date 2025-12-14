@@ -9,7 +9,7 @@
     linear-gradient(to bottom, #e7e7e7, #1a1a1a);
 
   --main-font-family: "Inter-Variable", sans-serif;
-  --accent-font-family: "PressStart2P-Regular";
+  --accent-font-family: "PressStart2P-Regular", sans-serif;
   --main-font-size: 14px;
   --accent-color: #000;
   --accent-border: 2px solid var(--accent-color);
