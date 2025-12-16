@@ -279,9 +279,9 @@
     )
 ) {
   .watermark {
+    text-shadow: none;
     -webkit-text-stroke: var(--watermark-stroke-width)
       var(--watermark-stroke-color);
     text-stroke: var(--watermark-stroke-width) var(--watermark-stroke-color);
-    text-shadow: none;
   }
 }
